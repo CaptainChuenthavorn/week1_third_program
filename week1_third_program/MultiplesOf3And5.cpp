@@ -1,19 +1,14 @@
 #include <stdio.h>
 int main()
 {
-	int keep[10], i,n;
-	for (n = 0;n < 10;n++) {
-		if ((n % 3) == 0 || (n % 5) == 0)
+	int n, i, k, total=0;
+	for (i = 0;i < 1000;i++) {
+		if (i % 3 == 0 || i % 5 == 0)
 		{
-			for (i = 0;i < 1;i++) {
-				keep[i] = n;
-			}
-
+			//printf("\n%d %d + %d ", total + i, total, i);
+			total += i;
 		}
-		for (i = 0;i < 10;i++) {
-			printf("\nKeep[%d] : %d", i, keep[i]);
-		}
-		
 	}
+	printf("total : %d", total);
 	return 0;
 }
