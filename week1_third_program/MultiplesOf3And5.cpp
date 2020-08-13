@@ -7,9 +7,11 @@ int main()
 	for (i = 0;i < n;i++) {
 		if (i % 3 == 0 || i % 5 == 0)
 		{
+			printf(" %d +", i);
 			total += i;
 		}
 	}
-	printf("total is  %d", total);
+	printf(" %d = %d",i, total);
+	printf("\n\ntotal is  %d", total);
 	return 0;
 }
